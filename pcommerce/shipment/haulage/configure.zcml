@@ -1,0 +1,28 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="pcommerce">
+    
+  <five:registerPackage package="." />
+
+  <include package="pcommerce.core" />
+  <include package=".browser" />
+
+  <!-- Register the installation GenericSetup extension profile -->
+  <genericsetup:registerProfile
+      name="default"
+      title="pcommerce.shipment.haulage"
+      directory="profiles/default"
+      description="Provides haulage shipment for PCommerce"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      />
+
+  <adapter
+      factory=".plugin.HaulageShipment"
+      provides="pcommerce.core.interfaces.IShipmentMethod"
+      name="pcommerce.shipment.haulage"
+      />
+
+</configure>

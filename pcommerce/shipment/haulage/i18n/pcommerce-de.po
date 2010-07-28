@@ -1,0 +1,37 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: pcommerce.shipment.haulage\n"
+"POT-Creation-Date: 2010-03-11 11:38+0000\n"
+"PO-Revision-Date: 2010-03-11 11:38+0000\n"
+"Last-Translator: Simon Kaeser <skaeser@raptus.com>\n"
+"Language-Team: Deutsch <skaeser@raptus.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-code: de\n"
+"Language-name: Deutsch\n"
+"Preferred-encodings: utf-8 latin1\n"
+"Domain: pcommerce\n"
+"X-is-fallback-for: de-ch de-de de-at de-li de-lu\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: ./plugin.py:12
+msgid "Haulage"
+msgstr "Spedition"
+
+#: ./plugin.py:13
+msgid "Shipment by a haulage company"
+msgstr "Lieferung durch eine Spedition"
+
+#. Default: "equal to customer address"
+#: ./browser/shipment.pt:6
+msgid "equal to billing address"
+msgstr "identisch mit der Rechnungsadresse"
+
+#. Default: "Haulage shipment address\n${address}"
+#: ./plugin.py:23
+msgid "haulage_mailinfo"
+msgstr "Lieferadresse Spedition\n${address}"
+

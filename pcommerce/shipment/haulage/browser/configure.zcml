@@ -1,0 +1,40 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="pcommerce">
+
+  <browser:view
+      for="..interfaces.IHaulageShipment"
+      class=".shipment.HaulageShipment"
+      name="shipment"
+      permission="pcommerce.CheckOut"
+      provides="pcommerce.core.interfaces.IShipmentView"
+      />
+      
+  <browser:view
+      for="..interfaces.IHaulageShipment"
+      class=".overview.HaulageOverview"
+      name="overview"
+      permission="pcommerce.CheckOut"
+      provides="pcommerce.core.interfaces.IShipmentView"
+      />
+      
+  <browser:view
+      for="..interfaces.IHaulageShipment"
+      class=".confirmation.HaulageConfirmation"
+      name="confirmation"
+      permission="pcommerce.CheckOut"
+      provides="pcommerce.core.interfaces.IShipmentView"
+      />
+
+  <browser:resource
+      name="pcommerce_shipment_haulage_icon.gif"
+      image="icon.gif"
+      />
+
+  <browser:resource
+      name="pcommerce_shipment_haulage_logo.gif"
+      image="logo.gif"
+      />
+  
+</configure>
