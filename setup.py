@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.0b3'
+version = '1.0b4'
 
 setup(name='pcommerce.shipment.haulage',
       version=version,
@@ -29,5 +29,7 @@ setup(name='pcommerce.shipment.haulage',
       ],
       entry_points="""
       # -*- Entry points: -*-
+      [z3c.autoinclude.plugin]
+      target = plone
       """,
       )
